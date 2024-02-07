@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How the Web Works</title>
+</head>
+<body>
+    <h1>How the Web Works</h1>
+    <h2>What is HTTP?</h2>
+        <p>HTTP = Hyper Text Transfer Protocol</p>
+        <p>It is how to communicate between servers and browsers. How they get and send data to a server.</p>
+    <br>
+    <h2>What is a URL?</h2>
+        <p> URL = Uniform Resource Locator</p>
+        <p>It is the way to access an internet resource. It has a protocol, hostname, port (unviewable in the URL), a resource, and then a query.</p>
+    <br>
+    <h2>What is DNS</h2>
+        <p>DNS = Domain Name System</p>
+        <p>they take hostname(s) or URLs and translate it/them into a corresponding ip address</p>
+    <br>
+    <h2>What is a query string?</h2>
+        <p> It is extra information and is typically used in search bars to indicate the extra information. It is typically done like ?x=1&x=2 which are key-value pairs.</p>
+    <br>
+    <h2>list two HTTP Verbs and their use cases</h2>
+        <ul>
+            <li>GET - Get data from a server</li>
+            <li>POST - Send data to a server (often times they change the data on the server.)</li>
+        </ul>
+    <br>
+    <h2>what is an HTTP request?</h2>
+        <p>
+            A request from a browser to a server, using the HTTP protocol.
+        </p>
+    <br>
+    <h2>what is an HTTP response?</h2>
+        <p>
+            A response from a server to the browser, using the HTTP protocol.
+        </p>
+    <br>
+    <h2>what is an HTTP header? give a couple examples of request and response headers you have seen</h2>
+        <p>
+            Additional informain about the requests and responses between the browser and server.
+        </p>
+        <h4>Request headers</h4>
+            <li>Accept</li>
+            <li>accept-language</li>
+            <li>cookie</li>
+            <li>Host</li>
+            <li>Status Code</li>
+        <h4> Response headers</h4>
+            <li>Date</li>
+            <li>Last-modified</li>
+            <li>Server</li>
+            <li>Content type</li>
+    <br>
+    <h2>What happens when you type a URL in a browser?</h2>
+    <ol type="1">
+        <li>The Browser turns the url or hostname into an IP address through the DNS</li>
+        <li>The Browser then makes a request to that IP address</li>
+        <li>The server responds to the request hopefully with a status code of 200 and not a 404(error:not found code)</li>
+        <li>The browser makes the web page using the HTML and other resources located in the response</li>
+        <li>If there are other resources, then the browser sends requests for those resources awaiting a response from the server</li>
+    </ol>
+</body>
+</html>
